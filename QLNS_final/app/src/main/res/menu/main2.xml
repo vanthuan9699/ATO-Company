@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/nav_profile"
+            android:checked="true"
+            android:icon="@drawable/canhan"
+            android:title="Profile" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_dm"
+            android:icon="@drawable/danhmuc"
+            android:title="Danh Mục" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_bh"
+            android:icon="@drawable/baohiem"
+            android:title="Bảo Hiểm" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_tl"
+            android:icon="@drawable/tinhluong"
+            android:title="Tính Lương" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_cc"
+            android:icon="@drawable/chamcong"
+            android:title="Chấm Công" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_ns"
+            android:icon="@drawable/nhansu"
+            android:title="Tính Lương" />
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_td"
+            android:icon="@drawable/tuyendung"
+            android:title="Tính Lương" />
+
+    </group>
+
+
+
+
+
+</menu>

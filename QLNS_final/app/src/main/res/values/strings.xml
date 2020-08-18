@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ATO Quản lý công việc</string>
+    <string name="tendangnhap_address">Tên đăng nhập</string>
+    <string name="matkhau_address">Mật khẩu</string>
+    <string name="btnLogin">Login</string>
+    <string name="tv_bankiem">Bản Kiểm</string>
+    <string name="tv_ngay">Ngày</string>
+    <string name="tv_ca">Ca</string>
+    <string name="tv_khach">Khách</string>
+    <string name="tv_sanpham">Sản Phẩm</string>
+    <string name="tv_size">Size</string>
+    <string name="tv_maycham">Máy Chấm Công</string>
+    <string name="tv_macham">Mã Chấm Công Nhân Viên</string>
+    <string name="tv_thoigiancham">Thời Gian Chấm</string>
+    <string name="cb_remember">Save PassWord</string>
+    <string name="progress">Loading...</string>
+    <string name="title_activity_stay_home">StayHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_canhan">CÁ NHÂN</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+    <string name="menu_home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

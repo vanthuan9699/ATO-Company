@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spn_custom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/spn_custom_2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Ngày chấm : "
+            android:textColor="#050505"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblNgayCham"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+
+            android:text="Ngày chấm"
+            android:textColor="#050505"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/lblCa"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spn_custom"
+                android:gravity="center"
+                android:textColor="#050505" />
+            <TextView
+                android:id="@+id/lblLoaiphep"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spn_custom"
+                android:gravity="center"
+                android:textColor="#050505" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblDiMuon"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spn_custom"
+                android:gravity="center"
+                android:textColor="#050505" />
+
+            <TextView
+                android:id="@+id/lblVeSom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spn_custom"
+                android:gravity="center"
+                android:textColor="#050505" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblGioVao"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spn_custom"
+                android:gravity="center"
+                android:textColor="#050505" />
+
+            <TextView
+                android:id="@+id/lblGioRa"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/spn_custom"
+                android:gravity="center"
+                android:textColor="#050505" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

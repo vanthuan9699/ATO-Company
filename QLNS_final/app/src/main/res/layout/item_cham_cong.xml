@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/lnChamCong"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/lblNgayCham"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="Ngày Chấm"
+            android:textColor="#000000">
+        </TextView>
+        <TextView
+            android:id="@+id/lblCa"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ca"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/lblGioVao"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Giờ vào"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lblGioRa"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Giờ ra"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lblDiMuon"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Đi muộn"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lblVeSom"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Về Sớm"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lblLoaiphep"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Loại Phép"
+            android:textColor="#000000" />
+    </LinearLayout>
+</FrameLayout>
+

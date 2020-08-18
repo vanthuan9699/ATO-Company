@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnChamCong"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_maychamcong"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/bg_line"
+        android:text="Máy Chấm Công"
+        android:textColor="#000000">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_machamcongnv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/bg_line"
+        android:text="Mã chấm công nhân viên"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/tv_thoigiancham"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_line"
+        android:gravity="center"
+        android:text="Thời gian chấm"
+        android:textColor="#000000" />
+</LinearLayout>
+
