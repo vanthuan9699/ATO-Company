@@ -13,7 +13,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:background="@drawable/bg_line"
-        android:text="Máy Chấm Công"
+        android:text="@string/tv_maycham"
         android:textColor="#000000">
     </TextView>
     <TextView
@@ -23,7 +23,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:background="@drawable/bg_line"
-        android:text="Mã chấm công nhân viên"
+        android:text="@string/tv_macham"
         android:textColor="#000000" />
     <TextView
         android:id="@+id/tv_thoigiancham"
@@ -32,7 +32,7 @@
         android:layout_weight="1"
         android:background="@drawable/bg_line"
         android:gravity="center"
-        android:text="Thời gian chấm"
+        android:text="@string/tv_thoigiancham"
         android:textColor="#000000" />
 </LinearLayout>
 
