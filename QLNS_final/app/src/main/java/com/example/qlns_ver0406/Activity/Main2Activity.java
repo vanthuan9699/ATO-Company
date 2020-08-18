@@ -1,4 +1,4 @@
-package com.example.qlns_ver0406;
+package com.example.qlns_ver0406.Activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -17,6 +17,7 @@ import com.example.qlns_ver0406.Fragment.Profile.BangCongFragment;
 import com.example.qlns_ver0406.Fragment.Profile.CTLuongFragment;
 import com.example.qlns_ver0406.Fragment.Profile.ChamCongFragment;
 import com.example.qlns_ver0406.Fragment.Profile.DKyThoiGianFragment;
+import com.example.qlns_ver0406.R;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 

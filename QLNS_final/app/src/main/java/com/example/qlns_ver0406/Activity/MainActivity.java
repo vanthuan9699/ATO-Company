@@ -13,7 +13,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.qlns_ver0406.Main2Activity;
 import com.example.qlns_ver0406.Model.MessageLogin;
 import com.example.qlns_ver0406.Network.MessageAPI;
 import com.example.qlns_ver0406.R;
