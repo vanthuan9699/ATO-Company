@@ -8,10 +8,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.qlns_ver0406.Config.AppInfo;
 import com.example.qlns_ver0406.Fragment.Profile.ChamCongFragment;
 import com.example.qlns_ver0406.Model.TimeLog;
 import com.example.qlns_ver0406.R;
 
+import java.text.ParseException;
 import java.util.List;
 
 public class TimeLogAdapter extends RecyclerView.Adapter<TimeLogAdapter.ViewHolder> {
@@ -45,6 +47,12 @@ public class TimeLogAdapter extends RecyclerView.Adapter<TimeLogAdapter.ViewHold
 
         TextView tvNgayCham = view.findViewById(R.id.tv_thoigiancham);
         tvNgayCham.setText(item.getNgayCham());
+        try {
+            tvNgayCham.setText(AppInfo.formatDate(item.getNgayCham(), "yyyy-MM-dd HH:mm:ss", "dd/MM/yyyy HH:mm:ss"));
+        } catch (ParseException e) {
+            tvNgayCham.setText("--");
+            e.printStackTrace();
+        }
 
     }
     public class ViewHolder extends RecyclerView.ViewHolder
