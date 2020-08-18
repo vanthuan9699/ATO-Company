@@ -73,6 +73,7 @@ public class BangCongAdapter extends RecyclerView.Adapter<BangCongAdapter.ViewHo
 
         TextView tvLoaiPhep = view.findViewById(R.id.lblLoaiphep);
         tvLoaiPhep.setText("Loại phép : " + item.getLoaiPhep());
+
     }
     public class ViewHolder extends RecyclerView.ViewHolder {
         View view;
