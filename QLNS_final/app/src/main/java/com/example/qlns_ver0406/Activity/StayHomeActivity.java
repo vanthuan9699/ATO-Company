@@ -12,8 +12,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.qlns_ver0406.Fragment.BaoHiem.BaoHiemFragment;
-import com.example.qlns_ver0406.Fragment.Profile.ChamCongFragment;
 import com.example.qlns_ver0406.Fragment.DanhMuc.DanhMucFragment;
+import com.example.qlns_ver0406.Fragment.Profile.ProfileFragment;
 import com.example.qlns_ver0406.R;
 import com.google.android.material.navigation.NavigationView;
 
@@ -37,7 +37,7 @@ public class StayHomeActivity extends AppCompatActivity implements NavigationVie
         toggle.syncState();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new ChamCongFragment()).commit();
+                    new ProfileFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_canhan);
         }
     }
@@ -49,7 +49,7 @@ public class StayHomeActivity extends AppCompatActivity implements NavigationVie
         switch (item.getItemId()) {
             case R.id.nav_canhan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ChamCongFragment()).commit();
+                        new ProfileFragment()).commit();
                 break;
             case R.id.nav_danhmuc:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

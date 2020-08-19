@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                             MessageLogin messageLogin = response.body();
                             if (messageLogin.getSuccess() == true) {
 //                                Toast.makeText(MainActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                                Intent intent = new Intent(MainActivity.this, StayHomeActivity.class);
                                 String accessKey = messageLogin.getData().getAccessKey();
                                 Bundle bundle = new Bundle();
                                 bundle.putString("access_key", accessKey);

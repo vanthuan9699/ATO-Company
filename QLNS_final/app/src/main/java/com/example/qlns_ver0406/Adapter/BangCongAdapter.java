@@ -23,7 +23,7 @@ public class BangCongAdapter extends RecyclerView.Adapter<BangCongAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_test, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_bang_cong, parent, false);
         return new ViewHolder(view);
     }
     @Override
