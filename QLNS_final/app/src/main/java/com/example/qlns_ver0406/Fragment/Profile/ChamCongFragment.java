@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.qlns_ver0406.Adapter.TimeLogAdapter;
 import com.example.qlns_ver0406.Model.Message;
@@ -30,6 +31,7 @@ public class ChamCongFragment extends Fragment {
     View view;
     RecyclerView rvTimeLog;
     String RREF_NAME = "BanKiem";
+    SwipeRefreshLayout refreshLayout;
 
     @Nullable
     @Override
@@ -37,8 +39,20 @@ public class ChamCongFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_chamcong, container, false);
         init();
         conFig();
+        refresh();
         return view;
     }
+
+    private void refresh() {
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                conFig();
+                refreshLayout.setRefreshing(false);
+            }
+        });
+    }
+
     private void conFig() {
         SharedPreferences share = this.getActivity().getSharedPreferences(RREF_NAME, Context.MODE_PRIVATE);
         String ac = share.getString("access_key", "");
@@ -60,10 +74,12 @@ public class ChamCongFragment extends Fragment {
     private void initTimeLog(List<TimeLog> timeLog) {
         TimeLogAdapter adapter = new TimeLogAdapter(this, timeLog);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
+        adapter.notifyDataSetChanged();
         rvTimeLog.setLayoutManager(layoutManager);
         rvTimeLog.setAdapter(adapter);
     }
     private void init() {
         rvTimeLog = view.findViewById(R.id.rv_timelogcanhan);
+        refreshLayout = view.findViewById(R.id.refresh_chamcong);
     }
 }

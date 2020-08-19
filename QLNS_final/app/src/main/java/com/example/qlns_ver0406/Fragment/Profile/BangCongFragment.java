@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.qlns_ver0406.Adapter.BangCongAdapter;
 import com.example.qlns_ver0406.Model.ChamCong;
@@ -29,17 +30,30 @@ public class BangCongFragment extends Fragment {
     View view;
     RecyclerView rvBangCong;
     String RREF_NAME = "BanKiem";
+    SwipeRefreshLayout refreshLayout;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_bangcong, container, false);
         init();
         conFig();
+        refresh();
         return view;
+    }
+
+    private void refresh() {
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                conFig();
+                refreshLayout.setRefreshing(false);
+            }
+        });
     }
 
     private void init() {
         rvBangCong = view.findViewById(R.id.rv_bangcong);
+        refreshLayout = view.findViewById(R.id.refresh_bangcong);
     }
 
     private void conFig(){
@@ -58,10 +72,10 @@ public class BangCongFragment extends Fragment {
             }
         });
     }
-
     private void initBangCong(List<ChamCong> chamCong) {
         BangCongAdapter adapter = new BangCongAdapter(this, chamCong);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
+        adapter.notifyDataSetChanged();
         rvBangCong.setLayoutManager(layoutManager);
         rvBangCong.setAdapter(adapter);
     }
