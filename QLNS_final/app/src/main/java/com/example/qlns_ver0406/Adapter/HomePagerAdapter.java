@@ -18,7 +18,6 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
         this.context = context;
         this.data = data;
     }
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {

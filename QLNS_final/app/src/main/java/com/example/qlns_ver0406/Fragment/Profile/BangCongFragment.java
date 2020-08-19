@@ -53,10 +53,8 @@ public class BangCongFragment extends Fragment {
                     initBangCong(message.getData().getChamCong());
                 }
             }
-
             @Override
             public void onFailure(Call<Message> call, Throwable t) {
-
             }
         });
     }

@@ -1,5 +1,6 @@
 package com.example.qlns_ver0406.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -13,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.qlns_ver0406.Adapter.HomePagerAdapter;
+import com.example.qlns_ver0406.Fragment.DanhMuc.DanhMucFragment;
 import com.example.qlns_ver0406.Fragment.Profile.BangCongFragment;
 import com.example.qlns_ver0406.Fragment.Profile.CTLuongFragment;
 import com.example.qlns_ver0406.Fragment.Profile.ChamCongFragment;
@@ -40,12 +42,10 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-
         //
         init();
         configVP();
     }
-
     private void configVP() {
         BangCongFragment bangCongFragment = new BangCongFragment();
         ChamCongFragment chamCongFragment = new ChamCongFragment();
@@ -58,10 +58,7 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
         HomePagerAdapter adapter = new HomePagerAdapter(getSupportFragmentManager(), this, data);
         vpHome.setAdapter(adapter);
         tlHome.setupWithViewPager(vpHome);
-
-
     }
-
     private void init() {
         tlHome = findViewById(R.id.tb_home);
         vpHome = findViewById(R.id.vp_home);
@@ -75,7 +72,6 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
             super.onBackPressed();
         }
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();

@@ -43,9 +43,7 @@ public class StayHomeActivity extends AppCompatActivity implements NavigationVie
     }
 
     private void init() {
-
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
