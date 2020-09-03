@@ -15,6 +15,22 @@
             android:id="@+id/nav_baohiem"
             android:icon="@drawable/baohiem"
             android:title="BẢO HIỂM" />
+        <item
+            android:id="@+id/nav_tinhluong"
+            android:icon="@drawable/tinhluong"
+            android:title="TÍNH LƯƠNG" />
+        <item
+            android:id="@+id/nav_chamcong"
+            android:icon="@drawable/chamcong"
+            android:title="CHẤM CÔNG" />
+        <item
+            android:id="@+id/nav_nhansu"
+            android:icon="@drawable/nhansu"
+            android:title="NHÂN SỰ" />
+        <item
+            android:id="@+id/nav_tuyendung"
+            android:icon="@drawable/tuyendung"
+            android:title="TUYỂN DỤNG" />
     </group>
 
 </menu>

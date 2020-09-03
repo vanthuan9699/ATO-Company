@@ -1,14 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Fragment.Profile.DKyThoiGianFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã đăng ký"
+            android:textColor="#020202" />
+
+        <Button
+            android:id="@+id/btn_themmoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Thêm mới" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#00BCD4"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:text="Từ ngày"
+            android:textColor="#020202" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:text="Đến ngày"
+            android:textColor="#020202" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+            android:text="Làm thêm"
+
+            android:textColor="#020202" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:text="Số giờ"
+            android:textColor="#020202" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_tungay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/tv_denngay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/tv_lamthem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/tv_sogio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:textColor="#020202" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:text="Nghỉ"
+            android:textColor="#020202" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:text="Loại nghỉ"
+            android:textColor="#020202" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+            android:text="Lý do"
+
+            android:textColor="#020202" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:text="Lịch làm việc"
+            android:textColor="#020202" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_nghi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/tv_loainghi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+
+            android:gravity="center"
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/tv_lydo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:textColor="#020202" />
+
+        <TextView
+            android:id="@+id/tv_lichlamviec"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_line"
+            android:gravity="center"
+
+            android:textColor="#020202" />
+    </LinearLayout>
+
+</LinearLayout>

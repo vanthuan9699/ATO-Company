@@ -12,6 +12,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.qlns_ver0406.Fragment.BaoHiem.BaoHiemFragment;
+import com.example.qlns_ver0406.Fragment.DanhMuc.BoPhanFragment;
 import com.example.qlns_ver0406.Fragment.DanhMuc.DanhMucFragment;
 import com.example.qlns_ver0406.Fragment.Profile.ProfileFragment;
 import com.example.qlns_ver0406.R;
@@ -59,6 +60,8 @@ public class StayHomeActivity extends AppCompatActivity implements NavigationVie
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new BaoHiemFragment()).commit();
                 break;
+
+
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

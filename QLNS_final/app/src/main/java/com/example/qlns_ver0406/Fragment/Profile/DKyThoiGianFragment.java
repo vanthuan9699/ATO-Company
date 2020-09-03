@@ -4,62 +4,55 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.qlns_ver0406.ExampleDialog;
 import com.example.qlns_ver0406.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link DKyThoiGianFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class DKyThoiGianFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
+    View view;
+    TextView tv_tungay, tv_denngay, tv_lamthem, tv_sogio, tv_nghi, tv_loainghi, tv_lydo, tv_lichlamviec;
+    Button btnThemmoi;
     public DKyThoiGianFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment DKyThoiGianFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static DKyThoiGianFragment newInstance(String param1, String param2) {
-        DKyThoiGianFragment fragment = new DKyThoiGianFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_d_ky_thoi_gian, container, false);
+        view = inflater.inflate(R.layout.fragment_d_ky_thoi_gian, container, false);
+        init();
+        loadThemmoi();
+        return view;
+    }
+
+    private void loadThemmoi() {
+        btnThemmoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+    }
+
+    private void openDialog() {
+        ExampleDialog exampleDialog = new ExampleDialog();
+        exampleDialog.show(getFragmentManager(), "example dialog");
+    }
+
+    private void init() {
+        tv_tungay = view.findViewById(R.id.tv_tungay);
+        tv_denngay = view.findViewById(R.id.tv_denngay);
+        tv_lamthem = view.findViewById(R.id.tv_lamthem);
+        tv_sogio = view.findViewById(R.id.tv_sogio);
+        tv_nghi = view.findViewById(R.id.tv_nghi);
+        tv_loainghi = view.findViewById(R.id.tv_loainghi);
+        tv_lydo = view.findViewById(R.id.tv_lydo);
+        tv_lichlamviec = view.findViewById(R.id.tv_lichlamviec);
+        btnThemmoi = view.findViewById(R.id.btn_themmoi);
     }
 }
