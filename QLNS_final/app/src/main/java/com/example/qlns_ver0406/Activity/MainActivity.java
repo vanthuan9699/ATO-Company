@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(Call<MessageLogin> call, Response<MessageLogin> response) {
                         if (response.isSuccessful()) {
                             MessageLogin messageLogin = response.body();
-                            if (messageLogin.getSuccess() == true) {
+                            assert messageLogin != null;
+                            if (messageLogin.getSuccess()) {
 //                                Toast.makeText(MainActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this, StayHomeActivity.class);
                                 String accessKey = messageLogin.getData().getAccessKey();
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                                     editor.putString(PASSWORD_KEY, edtPassword.getText().toString());
                                     editor.putBoolean("checked", true);
 //                                    editor.putString("access_key", accessKey);
-                                    editor.commit();
+                                    editor.apply();
                                 }else {
                                     editor = sharedPreferences.edit();
                                     editor.remove(USERNAME_KEY);

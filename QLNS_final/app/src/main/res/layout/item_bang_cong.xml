@@ -29,7 +29,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginTop="2dp"
-            android:text="Ngày chấm"
+            android:text="@string/ngay_cham"
             android:textColor="#050505"
             android:textSize="20sp" />
     </LinearLayout>

@@ -7,5 +7,12 @@
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     >
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cong_ty_ato"
+        android:drawableLeft="@drawable/folder"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/folder" />
 </LinearLayout>

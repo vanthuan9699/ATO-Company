@@ -1,5 +1,6 @@
 package com.example.qlns_ver0406;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
@@ -26,6 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Objects;
 
 public class ExampleDialog extends AppCompatDialogFragment {
     View view;
@@ -116,13 +118,13 @@ public class ExampleDialog extends AppCompatDialogFragment {
                         t1Minute = minute;
 
                         String time = t1Hour + ":" + t1Minute;
-                        SimpleDateFormat f24Hours = new SimpleDateFormat(
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat f24Hours = new SimpleDateFormat(
                                 "HH:mm"
 
                         );
                         try {
                             Date date = f24Hours.parse(time);
-                            SimpleDateFormat f12Hours = new SimpleDateFormat(
+                            @SuppressLint("SimpleDateFormat") SimpleDateFormat f12Hours = new SimpleDateFormat(
                                     "hh:mm aa"
                             );
                             edt_tugio.setText(f12Hours.format(date));
@@ -131,7 +133,7 @@ public class ExampleDialog extends AppCompatDialogFragment {
                         }
                     }
                 }, 12, 0, false);
-        timePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(timePickerDialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         timePickerDialog.updateTime(t1Hour, t1Minute);
         timePickerDialog.show();
     }
@@ -144,15 +146,16 @@ public class ExampleDialog extends AppCompatDialogFragment {
                         t1Minute = minute;
 
                         String time = t1Hour + ":" + t1Minute;
-                        SimpleDateFormat f24Hours = new SimpleDateFormat(
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat f24Hours = new SimpleDateFormat(
                                 "HH:mm"
 
                         );
                         try {
                             Date date = f24Hours.parse(time);
-                            SimpleDateFormat f12Hours = new SimpleDateFormat(
+                            @SuppressLint("SimpleDateFormat") SimpleDateFormat f12Hours = new SimpleDateFormat(
                                     "hh:mm aa"
                             );
+                            assert date != null;
                             edt_dengio.setText(f12Hours.format(date));
                         } catch (ParseException e) {
                             e.printStackTrace();

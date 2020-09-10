@@ -6,31 +6,35 @@
         <item
             android:id="@+id/nav_canhan"
             android:icon="@drawable/canhan"
-            android:title="CÁ NHÂN" />
+            android:title="@string/ca_nhan" />
         <item
             android:id="@+id/nav_danhmuc"
             android:icon="@drawable/danhmuc"
-            android:title="DANH MỤC" />
+            android:title="@string/d_m" />
         <item
             android:id="@+id/nav_baohiem"
             android:icon="@drawable/baohiem"
-            android:title="BẢO HIỂM" />
+            android:title="@string/b_h" />
         <item
             android:id="@+id/nav_tinhluong"
             android:icon="@drawable/tinhluong"
-            android:title="TÍNH LƯƠNG" />
+            android:title="@string/tinh_luong" />
         <item
             android:id="@+id/nav_chamcong"
             android:icon="@drawable/chamcong"
-            android:title="CHẤM CÔNG" />
+            android:title="@string/c_cong" />
         <item
             android:id="@+id/nav_nhansu"
             android:icon="@drawable/nhansu"
-            android:title="NHÂN SỰ" />
+            android:title="@string/nhan_su" />
         <item
             android:id="@+id/nav_tuyendung"
             android:icon="@drawable/tuyendung"
-            android:title="TUYỂN DỤNG" />
+            android:title="@string/tuyen_dung" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/alarm"
+            android:title="@string/alarm" />
     </group>
 
 </menu>

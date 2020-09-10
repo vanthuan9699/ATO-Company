@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Đã đăng ký"
+            android:text="@string/da_dky"
             android:textColor="#020202" />
 
         <Button
@@ -41,7 +41,7 @@
             android:background="@drawable/bg_line"
             android:gravity="center"
 
-            android:text="Từ ngày"
+            android:text="@string/tu_ngay"
             android:textColor="#020202" />
 
         <TextView
@@ -51,7 +51,7 @@
             android:background="@drawable/bg_line"
             android:gravity="center"
 
-            android:text="Đến ngày"
+            android:text="@string/den_ngay"
             android:textColor="#020202" />
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_weight="1"
             android:background="@drawable/bg_line"
             android:gravity="center"
-            android:text="Làm thêm"
+            android:text="@string/lam_them"
 
             android:textColor="#020202" />
 
@@ -71,7 +71,7 @@
             android:background="@drawable/bg_line"
 
             android:gravity="center"
-            android:text="Số giờ"
+            android:text="@string/so_gio"
             android:textColor="#020202" />
     </LinearLayout>
 
@@ -137,7 +137,7 @@
             android:background="@drawable/bg_line"
             android:gravity="center"
 
-            android:text="Nghỉ"
+            android:text="@string/nghi"
             android:textColor="#020202" />
 
         <TextView
@@ -147,7 +147,7 @@
             android:background="@drawable/bg_line"
 
             android:gravity="center"
-            android:text="Loại nghỉ"
+            android:text="@string/loai_nghi"
             android:textColor="#020202" />
 
         <TextView
@@ -156,7 +156,7 @@
             android:layout_weight="1"
             android:background="@drawable/bg_line"
             android:gravity="center"
-            android:text="Lý do"
+            android:text="@string/li_do"
 
             android:textColor="#020202" />
 
@@ -167,7 +167,7 @@
             android:background="@drawable/bg_line"
             android:gravity="center"
 
-            android:text="Lịch làm việc"
+            android:text="@string/lich_lam_viec"
             android:textColor="#020202" />
     </LinearLayout>
 
